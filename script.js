@@ -1,7 +1,1 @@
-const cards=document.querySelectorAll('.card');
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(e=>{
-if(e.isIntersecting)e.target.classList.add('visible');
-});
-});
-cards.forEach(c=>observer.observe(c));
+const form=document.getElementById('form');const msg=document.getElementById('msg');form.addEventListener('submit',e=>{e.preventDefault();msg.textContent='Demo application received. Connect this form to your application system before launch.';});
