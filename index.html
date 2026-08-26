@@ -1,47 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cre8tor House Studios</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="wallpaper"></div>
-
-<header class="hero">
-  <div class="giant-eight">8</div>
-  <div class="logo-placeholder">
-    <h1>CRE8TOR</h1>
-    <h2>HOUSE STUDIOS</h2>
-  </div>
-  <p class="tagline">A next-generation creative studio built for creators.</p>
-  <button>Apply To Become A Creator</button>
-</header>
-
-<section>
-<h2>Inside Cre8tor House</h2>
-<div class="cards">
-<div class="card">Industrial Lounge</div>
-<div class="card">Creator Kitchen</div>
-<div class="card">Creator Suites</div>
-<div class="card">Content Studios</div>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cre8tor House Studios</title><link rel="stylesheet" href="style.css">
+</head><body>
+<div class="mural"></div>
+<header><a href="#top">CRE<span>8</span>TOR</a><nav><a href="#house">The House</a><a href="#creators">Creators</a><a href="#apply">Apply</a></nav></header>
+<main id="top">
+<section class="hero">
+<div class="smoke"></div>
+<div class="logo">
+<div class="word"><span>CRE</span><div class="eightWrap"><div class="eight">8</div><i class="drip a"></i><i class="drip b"></i><i class="drip c"></i><div class="puddle"><i class="ripple one"></i><i class="ripple two"></i><i class="ripple three"></i></div></div><span>TOR</span></div>
+<div class="slash"></div><div class="house">HOUSE STUDIOS</div>
 </div>
+<p>A next-generation creator house built for ambitious women ready to turn content into a business.</p>
+<a class="button" href="#apply">APPLY TO BECOME A CREATOR ↗</a>
 </section>
-
-<section class="application">
-<h2>Creator Application</h2>
-<p>Tell us who you are, what you create, and why you belong at Cre8tor House.</p>
-<ul>
-<li>Name and contact information</li>
-<li>Social media platforms and follower counts</li>
-<li>Content niche and examples of your work</li>
-<li>Goals as a creator</li>
-<li>Portfolio and video introduction</li>
-</ul>
-</section>
-
-<footer>© Cre8tor House Studios</footer>
-<script src="script.js"></script>
-</body>
-</html>
+<section id="house" class="section"><small>THE HOUSE</small><h2>Where creativity<br><em>becomes a business.</em></h2><p class="lead">A purpose-built environment for content, collaboration, growth and community.</p>
+<div class="grid"><article>01<h3>Creator Suites</h3><p>Private spaces for filming, photography and personalization.</p></article><article>02<h3>Content Studios</h3><p>Professional environments for consistent, high-quality content.</p></article><article>03<h3>Creative Lounge</h3><p>A shared space for collaboration and networking.</p></article><article>04<h3>Creator Kitchen</h3><p>A bold, camera-ready lifestyle content space.</p></article></div></section>
+<section id="creators" class="section dark"><small>CRE8TOR COMMUNITY</small><h2>Eight spots.<br><em>One first cohort.</em></h2><p class="lead">We're looking for creators with personality, consistency, ambition and a genuine desire to build something bigger than a follower count.</p><div class="big8">8 <span>CREATORS<br><b>selected for the original house</b></span></div></section>
+<section id="apply" class="section"><small>CREATOR APPLICATION</small><h2>Show us<br><em>what you create.</em></h2><p class="lead">Our initial application helps us understand who you are, what you create, where you create and where you're going.</p>
+<form id="form"><div class="fields">
+<label>Full name<input required></label><label>Phone<input required type="tel"></label><label>Email<input required type="email"></label><label>Age<input required type="number" min="18"></label>
+<label>Primary platform<input placeholder="TikTok, Instagram, YouTube..."></label><label>Primary handle<input placeholder="@yourhandle"></label><label>Followers<input placeholder="Approximate total"></label><label>City / area<input placeholder="Cincinnati area"></label></div>
+<label>What type of content do you create?<textarea required></textarea></label>
+<label>What are your creator goals?<textarea required></textarea></label>
+<label>Show us your work — paste your best social/portfolio links<textarea required></textarea></label>
+<label>Why Cre8tor House?<textarea required></textarea></label>
+<label class="check"><input required type="checkbox"> I confirm the information is accurate and the accounts/work I provide may be reviewed during the application process.</label>
+<button class="button" type="submit">SUBMIT APPLICATION ↗</button><p id="msg"></p></form></section>
+</main><footer>CRE<span>8</span>TOR HOUSE STUDIOS<br><small>Build your audience. Build your business. Build your future.</small></footer>
+<script src="script.js"></script></body></html>
