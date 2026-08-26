@@ -36,3 +36,23 @@
   .hero-custom .hero-art{background-position:center top}
 }
 body:has(.hero-custom) > header{display:none;}
+.hero-custom .hero-art{background-size:contain;background-position:center top;background-color:#05040a}
+@media(max-width:600px){.hero-custom .hero-art{background-size:100% auto;background-position:center top}}
+.site-section{position:relative;padding:90px 7vw;background:#08070d;color:#fff;overflow:hidden}
+.site-section:nth-of-type(even){background:#0d0b14}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-kicker{font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;opacity:.7;margin-bottom:12px}
+.section-title{margin:0 0 22px;font-size:clamp(2.2rem,6vw,4.8rem);line-height:.95;text-transform:uppercase;letter-spacing:-.035em}
+.section-copy{max-width:760px;font-size:1.08rem;line-height:1.8;opacity:.9}
+.mission-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:start}
+.mission-card,.founder-card,.investor-card{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.035);padding:30px;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.mission-card h3,.founder-card h3,.investor-card h3{margin-top:0;text-transform:uppercase;letter-spacing:.08em}
+.values{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:26px}
+.value{padding:18px;border-left:3px solid #ff2d9b;background:rgba(255,255,255,.04)}
+.value b{display:block;margin-bottom:6px}
+.founder-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:40px;align-items:start}
+.founder-badge{min-height:260px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at center,#351060 0,#110b18 58%,#07060a 100%);border:1px solid rgba(255,255,255,.14);font-size:4rem;font-weight:900}
+.investor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.investor-card strong{display:block;font-size:1.4rem;margin-bottom:10px}
+.investor-cta{display:inline-block;margin-top:30px;padding:16px 26px;border:1px solid #ff3ab0;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+@media(max-width:760px){.mission-grid,.founder-layout,.investor-grid{grid-template-columns:1fr}.values{grid-template-columns:1fr}.site-section{padding:65px 6vw}}
