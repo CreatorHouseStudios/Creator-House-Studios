@@ -56,3 +56,37 @@ body:has(.hero-custom) > header{display:none;}
 .investor-card strong{display:block;font-size:1.4rem;margin-bottom:10px}
 .investor-cta{display:inline-block;margin-top:30px;padding:16px 26px;border:1px solid #ff3ab0;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
 @media(max-width:760px){.mission-grid,.founder-layout,.investor-grid{grid-template-columns:1fr}.values{grid-template-columns:1fr}.site-section{padding:65px 6vw}}
+
+/* V9: full-screen first-page hero on phones and desktop */
+html, body { margin: 0; padding: 0; }
+.hero-custom {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  height: 100vh;
+  height: 100svh;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
+  overflow: hidden;
+}
+.hero-custom .hero-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-color: #05040a;
+}
+@media (max-width: 600px) {
+  .hero-custom {
+    min-height: 100svh;
+    height: 100svh;
+  }
+  .hero-custom .hero-art {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+}
