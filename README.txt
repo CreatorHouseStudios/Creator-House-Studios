@@ -1,10 +1,6 @@
-Cre8tor House Studios — V16 FINAL
-Open index.html in a browser or upload the entire folder to GitHub Pages.
-
-The hero uses the exact uploaded reference artwork.
-Animations are CSS overlays: billowing smoke, paint drips/drops, ripple and reflection.
-
-Email forms use mailto and address creatorhousestudios@gmail.com.
-For automatic Priority-folder routing in Gmail, create a Gmail filter for the subject:
-PRIORITY • INVESTOR INQUIRY — Cre8tor House Studios
-and choose the desired label/priority action.
+CRE8TOR HOUSE STUDIOS
+This version uses the exact uploaded hero reference image as assets/hero.png.
+The image is not recreated or replaced. CSS overlays provide animated billowing smoke, paint drips/drops, expanding ripples, and a moving puddle reflection.
+Open index.html or upload the entire folder to GitHub Pages.
+Investor emails use the subject prefix PRIORITY so Gmail can route them with a filter/label.
+Company email: creatorhousestudios@gmail.com
