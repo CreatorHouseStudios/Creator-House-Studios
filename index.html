@@ -1,115 +1,99 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cre8tor House Studios</title><link rel="stylesheet" href="style.css">
-</head><body>
-<div class="mural"></div>
-<header><a href="#top">CRE<span>8</span>TOR</a><nav><a href="#house">The House</a><a href="#creators">Creators</a><a href="#apply">Apply</a><a href="#investors">INVESTORS</a></nav></header>
-<main id="top">
-<section class="hero hero-custom">
-  <div class="hero-art" role="img" aria-label="Cre8tor House Studios neon graffiti hero artwork"></div>
-<div class="animated-eight" aria-hidden="true">
-<svg viewBox="0 0 420 620" preserveAspectRatio="xMidYMid meet">
-<defs>
-<linearGradient id="eightFill" x1="15%" y1="0%" x2="85%" y2="100%">
-<stop offset="0%" stop-color="#087cff"/><stop offset="34%" stop-color="#6428ff"/><stop offset="67%" stop-color="#ff16a8"/><stop offset="100%" stop-color="#ff6a22"/>
-<animate attributeName="x1" values="15%;70%;15%" dur="5s" repeatCount="indefinite"/>
-<animate attributeName="x2" values="85%;30%;85%" dur="5s" repeatCount="indefinite"/>
-</linearGradient>
-<filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-</defs>
-<g class="eight-body" filter="url(#neonGlow)">
-<path d="M211 58 C133 58 89 110 89 177 C89 232 118 264 157 289 C111 314 72 354 72 424 C72 510 127 556 211 556 C296 556 350 510 350 424 C350 354 312 314 264 288 C303 262 331 229 331 177 C331 110 287 58 211 58 Z M211 121 C249 121 269 143 269 180 C269 214 246 233 211 255 C176 233 151 214 151 180 C151 143 173 121 211 121 Z M211 317 C257 342 286 369 286 423 C286 471 258 493 211 493 C164 493 136 471 136 423 C136 369 165 342 211 317 Z" fill="url(#eightFill)" fill-rule="evenodd" stroke="#05040a" stroke-width="18" stroke-linejoin="round"/>
-<path d="M211 68 C133 68 94 115 94 178 C94 225 118 253 157 280" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="7" stroke-linecap="round"/>
-</g>
-<g class="drips" fill="url(#eightFill)" stroke="#05040a" stroke-width="7">
-<path d="M139 494 C139 535 132 566 145 584 C158 566 153 530 153 494 Z"><animate attributeName="d" values="M139 494 C139 535 132 566 145 584 C158 566 153 530 153 494 Z;M139 494 C139 548 128 590 145 610 C162 588 153 538 153 494 Z;M139 494 C139 535 132 566 145 584 C158 566 153 530 153 494 Z" dur="2.6s" repeatCount="indefinite"/></path>
-<path d="M206 492 C206 548 198 579 211 603 C225 580 219 543 219 492 Z"><animate attributeName="d" values="M206 492 C206 548 198 579 211 603 C225 580 219 543 219 492 Z;M206 492 C206 570 197 615 212 632 C228 610 219 560 219 492 Z;M206 492 C206 548 198 579 211 603 C225 580 219 543 219 492 Z" dur="3.1s" repeatCount="indefinite"/></path>
-<path d="M274 480 C274 519 268 544 278 557 C289 541 285 513 285 480 Z"><animate attributeName="d" values="M274 480 C274 519 268 544 278 557 C289 541 285 513 285 480 Z;M274 480 C274 531 265 565 278 578 C291 560 285 520 285 480 Z;M274 480 C274 519 268 544 278 557 C289 541 285 513 285 480 Z" dur="2.2s" repeatCount="indefinite"/></path>
-</g>
-<g fill="#ff28b8">
-<circle cx="153" cy="590" r="7"><animate attributeName="cy" values="590;620;590" dur="1.4s" repeatCount="indefinite"/></circle>
-<circle cx="212" cy="620" r="6"><animate attributeName="cy" values="620;650;620" dur="1.8s" repeatCount="indefinite"/></circle>
-<circle cx="280" cy="570" r="6"><animate attributeName="cy" values="570;605;570" dur="1.55s" repeatCount="indefinite"/></circle>
-</g>
-<g>
-<ellipse cx="210" cy="603" rx="105" ry="19" fill="#2b0d75" opacity=".55"/>
-<ellipse cx="210" cy="603" rx="35" ry="5" fill="none" stroke="#00c8ff" stroke-width="5"><animate attributeName="rx" values="35;105;35" dur="2.2s" repeatCount="indefinite"/><animate attributeName="ry" values="5;19;5" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;.15;.9" dur="2.2s" repeatCount="indefinite"/></ellipse>
-<ellipse cx="210" cy="603" rx="15" ry="3" fill="none" stroke="#ff20bd" stroke-width="4"><animate attributeName="rx" values="15;90;15" dur="1.7s" repeatCount="indefinite"/><animate attributeName="ry" values="3;16;3" dur="1.7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;.1;.9" dur="1.7s" repeatCount="indefinite"/></ellipse>
-</g>
-</svg>
-</div>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cre8tor House Studios</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home">Cre8tor <span>House Studios</span></a>
+  <nav>
+    <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#creators">CREATORS</a>
+    <a href="#apply">APPLY</a><a href="#house">THE HOUSE</a><a href="#faq">FAQ</a>
+    <a href="#investors">INVESTORS</a><a href="#contact">CONTACT</a>
+  </nav>
+  <a class="nav-cta" href="#apply">APPLY NOW</a>
+</header>
 
-  <div class="hero-links" aria-hidden="true">
-    <a href="#house">THE HOUSE</a>
-    <a href="#creators">CREATORS</a>
-    <a href="#apply">APPLY</a>
+<main>
+<section id="home" class="hero">
+  <div class="art-wrap">
+    <img src="assets/hero-reference.png" alt="Cre8tor House Studios hero artwork">
+    <div class="smoke smoke-a"></div><div class="smoke smoke-b"></div>
+    <div class="drip d1"></div><div class="drip d2"></div><div class="drip d3"></div>
+    <div class="drop drop1"></div><div class="drop drop2"></div>
+    <div class="ripple"></div><div class="reflection"></div>
+  </div>
+  <div class="hero-copy">
+    <p>NEXT-GENERATION ADULT CONTENT CREATOR HOUSE</p>
+    <h1>BUILT FOR AMBITIOUS WOMEN READY TO TURN CONTENT INTO A BUSINESS.</h1>
+    <a class="button" href="#apply">APPLY TO BECOME A CREATOR →</a>
   </div>
 </section>
-<section class="site-section" id="about">
-<div class="section-inner">
-<div class="section-kicker">About Cre8tor House Studios</div>
-<div class="mission-grid">
-<div>
-<h2 class="section-title">We are building a better way to build a creator business.</h2>
-<p class="section-copy">Cre8tor House Studios is a creator-focused company designed to give ambitious women more than a place to make content. We are creating a professional environment where creators can develop their brand, sharpen their business skills, produce high-quality content, and build sustainable income.</p>
-<p class="section-copy">Our goal is simple: take the chaos out of starting, provide the structure and resources creators need, and help turn creativity into a real business.</p>
-</div>
-<div class="mission-card">
-<h3>Our Mission</h3>
-<p class="section-copy">To create a safe, professional, creatively inspiring home base where emerging creators can grow their audience, develop business discipline, and build the confidence to own their future.</p>
-<div class="values">
-<div class="value"><b>CREATIVITY</b><span>Original ideas deserve room to grow.</span></div>
-<div class="value"><b>BUSINESS</b><span>We treat content creation like a business.</span></div>
-<div class="value"><b>COMMUNITY</b><span>Creators grow faster when they have support.</span></div>
-<div class="value"><b>OWNERSHIP</b><span>The goal is long-term independence.</span></div>
-</div>
-</div>
-</div>
-</div>
+
+<section id="about" class="section">
+  <p class="eyebrow">ABOUT US</p><h2>CREATIVE FREEDOM. BUSINESS-MINDED CREATORS.</h2>
+  <p>Cre8tor House Studios is an adult-content creator studio designed to give ambitious women a professional environment, production resources, structure, privacy, and business-minded support so they can build sustainable creator businesses on their own terms.</p>
+  <p>We are building a community—not simply a place to make content.</p>
 </section>
 
-<section class="site-section" id="founder">
-<div class="section-inner">
-<div class="section-kicker">Meet the Founder</div>
-<div class="founder-layout">
-<div class="founder-badge"><img src="founder-michelle.jpg" alt="Michelle Miller, Founder of Cre8tor House Studios"></div>
-<div class="founder-card">
-<h2 class="section-title">Built by a founder who believes opportunity should be created.</h2>
-<p class="section-copy">Cre8tor House Studios was founded by Michelle Miller, who saw an opportunity to create something different: a company that treats emerging creators as entrepreneurs rather than simply content producers.</p>
-<p class="section-copy">Michelle brings a practical, hands-on approach to the company, combining creative vision with a strong focus on business structure, operations, partnerships, and long-term growth.</p>
-<p class="section-copy">This is a founder-led company being built intentionally from the ground up—with the creators, their businesses, and the community at the center of the model.</p>
-</div>
-</div>
-</div>
+<section id="creators" class="section dark">
+  <p class="eyebrow">WHO WE'RE LOOKING FOR</p><h2>CREATORS WITH A VISION.</h2>
+  <div class="cards">
+    <article><h3>21–26 FOCUS</h3><p>Our core recruitment focus is women in the 21–26 range who are mature, motivated, and serious about building a business.</p></article>
+    <article><h3>BUSINESS MINDSET</h3><p>We want creators who see content as a business and are willing to learn branding, audience growth, consistency, and financial discipline.</p></article>
+    <article><h3>PROFESSIONAL + RESPECTFUL</h3><p>Reliability, communication, boundaries, privacy, and respect for the house and other creators matter.</p></article>
+  </div>
 </section>
 
-<section class="site-section" id="investors">
-<div class="section-inner">
-<div class="section-kicker">For Potential Investors</div>
-<h2 class="section-title">Invest in the creator economy from the ground floor.</h2>
-<p class="section-copy">Cre8tor House Studios is developing a repeatable creator-house model that combines physical studio space, creator development, content production, partnerships, and business education. We are focused on proving the model through an initial pilot and building the operating foundation for expansion.</p>
-<div class="investor-grid">
-<div class="investor-card"><strong>The Opportunity</strong><span>A professional infrastructure layer for creators who want to turn audiences and content into businesses.</span></div>
-<div class="investor-card"><strong>The Model</strong><span>A cohort-based creator house with structured access, production resources, programming, and brand partnerships.</span></div>
-<div class="investor-card"><strong>The Roadmap</strong><span>Prove the pilot, refine operations, establish unit economics, and develop a repeatable expansion model.</span></div>
-</div>
-<a class="investor-cta" href="#contact">Investor Inquiries →</a>
-</div>
+<section id="apply" class="section">
+  <p class="eyebrow">APPLICATION</p><h2>READY TO BUILD?</h2>
+  <form onsubmit="return submitApplication(event)">
+    <input required name="name" placeholder="Full name">
+    <input required type="email" name="email" placeholder="Email">
+    <input name="age" placeholder="Age">
+    <textarea required name="about" placeholder="Tell us about yourself, your creator goals, and what you want to build."></textarea>
+    <button class="button" type="submit">START APPLICATION →</button>
+  </form>
 </section>
 
-<section id="house" class="section"><small>THE HOUSE</small><h2>Where creativity<br><em>becomes a business.</em></h2><p class="lead">A purpose-built environment for content, collaboration, growth and community.</p>
-<div class="grid"><article>01<h3>Creator Suites</h3><p>Private spaces for filming, photography and personalization.</p></article><article>02<h3>Content Studios</h3><p>Professional environments for consistent, high-quality content.</p></article><article>03<h3>Creative Lounge</h3><p>A shared space for collaboration and networking.</p></article><article>04<h3>Creator Kitchen</h3><p>A bold, camera-ready lifestyle content space.</p></article></div></section>
-<section id="creators" class="section dark"><small>CRE8TOR COMMUNITY</small><h2>Eight spots.<br><em>One first cohort.</em></h2><p class="lead">We're looking for creators with personality, consistency, ambition and a genuine desire to build something bigger than a follower count.</p><div class="big8">8 <span>CREATORS<br><b>selected for the original house</b></span></div></section>
-<section id="apply" class="section"><small>CREATOR APPLICATION</small><h2>Show us<br><em>what you create.</em></h2><p class="lead">Our initial application helps us understand who you are, what you create, where you create and where you're going.</p>
-<form id="form"><div class="fields">
-<label>Full name<input required></label><label>Phone<input required type="tel"></label><label>Email<input required type="email"></label><label>Age<input required type="number" min="18"></label>
-<label>Primary platform<input placeholder="TikTok, Instagram, YouTube..."></label><label>Primary handle<input placeholder="@yourhandle"></label><label>Followers<input placeholder="Approximate total"></label><label>City / area<input placeholder="Cincinnati area"></label></div>
-<label>What type of content do you create?<textarea required></textarea></label>
-<label>What are your creator goals?<textarea required></textarea></label>
-<label>Show us your work — paste your best social/portfolio links<textarea required></textarea></label>
-<label>Why Cre8tor House?<textarea required></textarea></label>
-<label class="check"><input required type="checkbox"> I confirm the information is accurate and the accounts/work I provide may be reviewed during the application process.</label>
-<button class="button" type="submit">SUBMIT APPLICATION ↗</button><p id="msg"></p></form></section>
-</main><footer>CRE<span>8</span>TOR HOUSE STUDIOS<br><small>Build your audience. Build your business. Build your future.</small></footer>
-<script src="script.js"></script></body></html>
+<section id="house" class="section dark">
+  <p class="eyebrow">THE HOUSE</p><h2>A PRIVATE, PROFESSIONAL CREATOR ENVIRONMENT.</h2>
+  <p>Dedicated content spaces, creator bedrooms, lounge areas, production support, and a structure built around rotating creator schedules and privacy.</p>
+</section>
+
+<section id="faq" class="section">
+  <p class="eyebrow">FAQ + FOUNDER</p><h2>FREQUENTLY ASKED QUESTIONS</h2>
+  <details open><summary>Who founded Cre8tor House Studios?</summary><p>Cre8tor House Studios was founded by Michelle, who created the concept to give ambitious women a more professional, business-focused path into adult content creation.</p></details>
+  <details><summary>Is this an adult-content studio?</summary><p>Yes. Cre8tor House Studios is specifically designed for adult-content creators.</p></details>
+  <details><summary>Do creators have to work with a specific platform?</summary><p>No single platform is the identity of the company. The goal is to help creators build their own brands and businesses.</p></details>
+  <details><summary>How do I apply?</summary><p>Use the application section above. Selected applicants will receive next steps.</p></details>
+</section>
+
+<section id="investors" class="section investor">
+  <p class="eyebrow">INVESTORS</p><h2>INVEST IN THE CREATOR ECONOMY.</h2>
+  <p>Cre8tor House Studios is developing a scalable creator-house model combining physical studio infrastructure, creator support, production resources, and business development.</p>
+  <a class="button" href="#investor-inquiry">INVESTOR INQUIRY →</a>
+</section>
+
+<section id="investor-inquiry" class="section dark">
+  <p class="eyebrow">INVESTOR INQUIRY</p><h2>LET'S TALK.</h2>
+  <form onsubmit="return submitInvestor(event)">
+    <input required name="name" placeholder="Name">
+    <input required type="email" name="email" placeholder="Email">
+    <input name="company" placeholder="Company / Organization">
+    <textarea required name="message" placeholder="Tell us what you're interested in."></textarea>
+    <button class="button" type="submit">SEND INVESTOR INQUIRY →</button>
+  </form>
+  <p class="small">Investor inquiries are addressed to creatorhousestudios@gmail.com with a priority subject tag so a Gmail filter can route them to a Priority/Investor label.</p>
+</section>
+
+<section id="contact" class="section">
+  <p class="eyebrow">CONTACT</p><h2>CRE8TOR HOUSE STUDIOS</h2>
+  <p><a href="mailto:creatorhousestudios@gmail.com">creatorhousestudios@gmail.com</a></p>
+</section>
+</main>
+<script src="script.js"></script>
+</body></html>

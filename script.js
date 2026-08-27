@@ -1,1 +1,3 @@
-const form=document.getElementById('form');const msg=document.getElementById('msg');form.addEventListener('submit',e=>{e.preventDefault();msg.textContent='Demo application received. Connect this form to your application system before launch.';});
+function mailto(subject, body){const url='mailto:creatorhousestudios@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);window.location.href=url;return false}
+function submitApplication(e){e.preventDefault();const f=new FormData(e.target);mailto('CREATOR APPLICATION — Cre8tor House Studios',`Name: ${f.get('name')}\nEmail: ${f.get('email')}\nAge: ${f.get('age')}\n\nAbout / goals:\n${f.get('about')}`)}
+function submitInvestor(e){e.preventDefault();const f=new FormData(e.target);mailto('PRIORITY • INVESTOR INQUIRY — Cre8tor House Studios',`Name: ${f.get('name')}\nEmail: ${f.get('email')}\nCompany: ${f.get('company')}\n\nInquiry:\n${f.get('message')}`)}
