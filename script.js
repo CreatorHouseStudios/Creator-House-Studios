@@ -1,3 +1,3 @@
-function mailto(subject, body){const url='mailto:creatorhousestudios@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);window.location.href=url;return false}
-function submitApplication(e){e.preventDefault();const f=new FormData(e.target);mailto('CREATOR APPLICATION — Cre8tor House Studios',`Name: ${f.get('name')}\nEmail: ${f.get('email')}\nAge: ${f.get('age')}\n\nAbout / goals:\n${f.get('about')}`)}
-function submitInvestor(e){e.preventDefault();const f=new FormData(e.target);mailto('PRIORITY • INVESTOR INQUIRY — Cre8tor House Studios',`Name: ${f.get('name')}\nEmail: ${f.get('email')}\nCompany: ${f.get('company')}\n\nInquiry:\n${f.get('message')}`)}
+function send(subject,body){location.href='mailto:creatorhousestudios@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);return false}
+function apply(e){e.preventDefault();let f=new FormData(e.target);return send('CREATOR APPLICATION — Cre8tor House Studios',`Name: ${f.get('name')}\nEmail: ${f.get('email')}\nAge: ${f.get('age')}\n\n${f.get('message')}`)}
+function investor(e){e.preventDefault();let f=new FormData(e.target);return send('PRIORITY • INVESTOR INQUIRY — Cre8tor House Studios',`Name: ${f.get('name')}\nEmail: ${f.get('email')}\nCompany: ${f.get('company')}\n\n${f.get('message')}`)}
